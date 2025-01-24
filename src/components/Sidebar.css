@@ -1,0 +1,134 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #181818;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease;
+}
+
+.sidebar.collapsed {
+  width: 80px;
+}
+
+.hamburger-menu {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #232323;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-info {
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.user-info img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.user-info h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menu li i {
+  margin-right: 10px;
+}
+
+.menu li:hover,
+.menu li.active {
+  background-color: #0d5726;
+}
+
+.add-list {
+  margin: 20px;
+  padding: 10px;
+  background-color: #0d5726;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.progress-section {
+  margin-top: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.progress-donut {
+  margin: 20px auto;
+  width: 80px;
+  height: 80px;
+}
+
+.circular-chart {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke: #0d5726;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+.percentage {
+  fill: #fff;
+  font-size: 10px;
+  text-anchor: middle;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+}
+
+.pending {
+  color: #f4b400;
+}
+
+.done {
+  color: #0d5726;
+}
+
+.info-icon {
+  margin-left: 5px;
+  color: #aaa;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0, 100;
+  }
+}

@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #333;
+}
+
+.task-page {
+  padding: 20px;
+}
+
+.task-input input {
+  padding: 10px;
+  width: 70%;
+}
+
+.task-input button {
+  padding: 10px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #444;
+  margin: 5px 0;
+}
+
+.task-list button {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
